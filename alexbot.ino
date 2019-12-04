@@ -2,6 +2,8 @@ void setup() {
   // put your setup code here, to run once:
   pinMode(6, OUTPUT);
   pinMode(9, OUTPUT);
+  // seed the random so alexbot doesn't always use the exact same sequence
+  randomSeed(analogRead(1));
 }
 
 double old_random_1, old_random_2;
